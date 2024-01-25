@@ -1,0 +1,81 @@
+name: unite
+description: "Your Health, Your Way, Your Choice!"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.3 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+    # Icons
+  cupertino_icons: ^1.0.2
+  iconsax: ^0.0.8
+
+  flutter_native_splash: ^2.3.9
+  smooth_page_indicator: ^1.1.0
+
+  # Utilities
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+
+  # State Management
+  get: ^4.6.5
+  get_storage: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/logos/
+
+  fonts:
+    - family:
+      fonts:
+        - asset: assets/fonts/NunitoSans_7pt-ExtraLightItalic.ttf
+          style: italic
+          weight: 200
+        - asset: assets/fonts/NunitoSans_7pt-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/NunitoSans_7pt-Light.ttf
+          weight: 300
+        - asset: assets/fonts/NunitoSans_7pt-LightItalic.ttf
+          style: italic
+          weight: 300
+        - asset: assets/fonts/NunitoSans_7pt-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NunitoSans_7pt-Italic.ttf
+          style: italic
+          weight: 400
+        - asset: assets/fonts/NunitoSans_7pt-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/NunitoSans_7pt-MediumItalic.ttf
+          style: italic
+          weight: 500
+        - asset: assets/fonts/NunitoSans_7pt-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/NunitoSans_7pt-SemiBoldItalic.ttf
+          style: italic
+          weight: 600
+        - asset: assets/fonts/NunitoSans_7pt-BoldItalic.ttf
+          style: italic
+          weight: 700
+        - asset: assets/fonts/NunitoSans_7pt-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NunitoSans_7pt-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/NunitoSans_7pt-ExtraBoldItalic.ttf
+          style: italic
+          weight: 800
+        - asset: assets/fonts/NunitoSans_7pt-Black.ttf
+          weight: 900
+        - asset: assets/fonts/NunitoSans_7pt-BlackItalic.ttf
+          style: italic
+          weight: 900
