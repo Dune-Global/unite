@@ -1,4 +1,4 @@
-# unite
+# Unite
 
 A new Flutter project.
 
