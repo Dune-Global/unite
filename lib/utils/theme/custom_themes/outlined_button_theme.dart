@@ -1,34 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:unite/utils/constants/colors.dart';
+import 'package:unite/utils/constants/sizes.dart';
 
 class TOutlinedButtonTheme {
-  TOutlinedButtonTheme._();
+  TOutlinedButtonTheme._(); //To avoid creating instances
 
-  static final lightOutlinedButton = OutlinedButtonThemeData(
+  /* -- Light Theme -- */
+  static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.blue,
-        disabledBackgroundColor: Colors.grey,
-        disabledForegroundColor: Colors.grey,
-        side: const BorderSide(color: Colors.blue),
-        padding: const EdgeInsets.symmetric(vertical: 18),
-        textStyle: const TextStyle(
-            fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        )),
+      elevation: 0,
+      foregroundColor: TColors.dark,
+      side: const BorderSide(color: TColors.borderPrimary),
+      textStyle: const TextStyle(
+          fontSize: 16, color: TColors.black, fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.symmetric(
+          vertical: TSizes.buttonHeight, horizontal: 20),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+    ),
   );
-  static final darkOutlinedButton = OutlinedButtonThemeData(
+
+  /* -- Dark Theme -- */
+  static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.blue,
-        disabledBackgroundColor: Colors.grey,
-        disabledForegroundColor: Colors.grey,
-        side: const BorderSide(color: Colors.blue),
-        padding: const EdgeInsets.symmetric(vertical: 18),
-        textStyle: const TextStyle(
-            fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        )),
+      foregroundColor: TColors.light,
+      side: const BorderSide(color: TColors.borderPrimary),
+      textStyle: const TextStyle(
+          fontSize: 16, color: TColors.textWhite, fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.symmetric(
+          vertical: TSizes.buttonHeight, horizontal: 20),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+    ),
   );
 }
