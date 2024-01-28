@@ -3,14 +3,18 @@ class TTexts {
 
   static const String homeAppbarSubTitle = "Wasath Theekshana";
 
-  static const String onBoardingTitle1 = "Welcome to Unite";
-  static const String onBoardingTitle2 = "Welcome to Unite";
-  static const String onBoardingTitle3 = "Welcome to Unite";
+  // -- Onboarding Screen Data
+
+  static const String onBoardingTitle1 = "E-prescription";
+  static const String onBoardingTitle2 = "Monitoring";
+  static const String onBoardingTitle3 = "Research Data";
 
   static const String onBoardingSubTitle1 =
-      "Unite is a social media platform that allows you to connect with your friends and family.";
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.  dolor sit amet, consectetur adipiscing elit";
   static const String onBoardingSubTitle2 =
-      "Unite is a social media platform that allows you to connect with";
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.  dolor sit amet, consectetur adipiscing elit";
   static const String onBoardingSubTitle3 =
-      "Unite is a social media platform that allows you to connect with";
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.  dolor sit amet, consectetur adipiscing elit";
+
+  // -- Onboarding Screen Data
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:unite/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:unite/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:unite/utils/constants/text_strings.dart';
 import 'package:unite/utils/theme/theme.dart';
 
@@ -16,7 +15,6 @@ class App extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      // initialBinding: GeneralBindings(),
       home: OnBoardingScreen(),
     );
   }

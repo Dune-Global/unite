@@ -40,8 +40,15 @@ flutter:
   fonts:
     - family: SFPro
       fonts:
-        - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
+        - asset: assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF
+          style: italic
+          weight: 200
+        - asset: assets/fonts/SFPRODISPLAYTHINITALIC.OTF
+          style: italic
           weight: 300
+        - asset: assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF
+          style: italic
+          weight: 400
         - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
           weight: 400
         - asset: assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF
@@ -55,3 +62,9 @@ flutter:
           weight: 600
         - asset: assets/fonts/SFPRODISPLAYBOLD.OTF
           weight: 800
+        - asset: assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF
+          style: italic
+          weight: 800
+        - asset: assets/fonts/SFPRODISPLAYBLACKITALIC.OTF
+          style: italic
+          weight: 900
