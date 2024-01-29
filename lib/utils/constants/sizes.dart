@@ -19,7 +19,7 @@ class TSizes {
 
   // Button Sizes
   static const double buttonHeight = 18.0;
-  static const double buttonRadius = 12.0;
+  static const double buttonRadius = 14.0;
   static const double buttonWidth = 120.0;
 
   // AppBar Height

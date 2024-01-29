@@ -1,13 +1,15 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:unite/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:unite/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:unite/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:unite/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:unite/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+import 'package:unite/utils/constants/colors.dart';
 import 'package:unite/utils/constants/image_strings.dart';
 import 'package:unite/utils/constants/text_strings.dart';
+import 'package:unite/utils/helpers/helper_functions.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -15,7 +17,7 @@ class OnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(OnBoardingController());
-
+  
     return Scaffold(
       body: Stack(
         children: [

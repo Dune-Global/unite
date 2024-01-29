@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:unite/utils/constants/colors.dart';
+import 'package:unite/utils/helpers/helper_functions.dart';
 
 class SystemOverlay extends StatelessWidget {
-  const SystemOverlay({Key? key, required this.child}) : super(key: key);
-
+  const SystemOverlay({Key? key, required this.child, required BuildContext context}) : super(key: key);
   final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    // Set system overlays to make the app run in full screen
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+    final dark = THelperFunctions.isDarkMode(context);
     SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: TColors.dark, // Set the status bar color to your app's background color
-        systemNavigationBarColor: TColors.dark, // Set the navigation bar color to your theme background color
+      SystemUiOverlayStyle(
+        statusBarColor: dark ? TColors.light : TColors.darkerBlue,
+        statusBarIconBrightness: Brightness.dark,
+        statusBarBrightness: Brightness.dark,
+        systemNavigationBarColor: TColors.white,
+        systemNavigationBarDividerColor: TColors.white,
+        systemNavigationBarIconBrightness: Brightness.dark,
       ),
     );
 

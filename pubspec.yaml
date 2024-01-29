@@ -36,6 +36,7 @@ flutter:
     - assets/icons/
     - assets/logos/
     - assets/images/on_boarding_images/
+    - assets/icons/welcome/
 
   fonts:
     - family: SFPro
